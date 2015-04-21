@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="Global Proteome Machine Organization">
+        <key>MON4c822865-53e6-4e55-ad39-33ee2dbde14a</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <collection type="dataset">
+            <name type="primary">
+                <namePart type="">The GPM (Global Proteome Machine) Database</namePart>
+            </name>
+            <identifier type="uri">MON4c822865-53e6-4e55-ad39-33ee2dbde14a</identifier>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.thegpm.org/</value>
+                    </electronic>
+                </address>
+            </location>
+            <description type="brief">
+                &lt;p&gt;Proteomics crowdsourced &amp;quot;Big Data&amp;quot;. The GPM is an experimental project to
+                create knowledge from proteomics data and reuse it to solve biomedical research problems. The Global
+                Proteome Machine Database was constructed to utilize the information obtained by GPM servers to aid in
+                the difficult process of validating peptide MS/MS spectra as well as protein coverage patterns. This
+                database has been integrated into the GPM server pages, allowing users to quickly compare their
+                experimental results with the best results that have been previously observed by users of the machine.&lt;/p&gt;
+            </description>
+            <description type="logo">
+                &lt;p&gt;http://www.thegpm.org/images/gpm.png&lt;/p&gt;
+            </description>
+            <description type="rights">
+                All data, files and other information made available through ftp.thegpm.org is protected by copyright.
+                Copyright (C) 2012 Ronald C. Beavis. All rights reserved.
+            </description>
+            <description type="accessRights">If you have any questions regarding the use of this information, please
+                contact:
+                Ronald C. Beavis
+                rbeavis@beavisinformatics.ca
+                706-70 Arthur Street
+                Winnipeg, Manitoba
+                Canada
+                R3B 0R3
+            </description>
+            <relatedObject>
+                <key>MONebcb3d9b-324f-47d5-9591-a6b1414823f2</key>
+                <relation type="isOperatedOnBy">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <relatedObject>
+                <key>MONc690ce7a-fe08-4c65-ab4b-fcca79e04733</key>
+                <relation type="isOwnedBy">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <subject type="anzsrc-for">030406</subject>
+            <subject type="anzsrc-for">060109</subject>
+            <subject type="anzsrc-for">110106</subject>
+        </collection>
+    </registryObject>
+</registryObjects>

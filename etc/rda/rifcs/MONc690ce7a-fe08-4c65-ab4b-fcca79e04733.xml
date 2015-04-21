@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="Global Proteome Machine Organization">
+        <key>MONc690ce7a-fe08-4c65-ab4b-fcca79e04733</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <party type="group">
+            <name type="primary">
+                <namePart>Global Proteome Machine Organization</namePart>
+            </name>
+            <identifier type="local">MONc690ce7a-fe08-4c65-ab4b-fcca79e04733</identifier>
+            <location>
+                <address>
+                    <electronic type="email">
+                        <value>rbeavis@beavisinformatics.ca</value>
+                    </electronic>
+                </address>
+            </location>
+            <description type="brief">
+                The Global Proteome Machine Organization was set up so that scientists involved in proteomics using
+                tandem mass spectrometry could use that data to analyze proteomes. The projects supported by the GPMO
+                have been selected to improve the quality of analysis, make the results portable and to provide a common
+                platform for testing and validating proteomics results.
+            </description>
+            <subject type="anzsrc-for">060109</subject>
+            <subject type="anzsrc-for">110106</subject>
+        </party>
+    </registryObject>
+</registryObjects>

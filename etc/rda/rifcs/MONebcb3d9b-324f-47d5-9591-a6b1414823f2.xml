@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="Monash University">
+        <key>MONebcb3d9b-324f-47d5-9591-a6b1414823f2</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <service type="assemble">
+            <identifier type="local">MONebcb3d9b-324f-47d5-9591-a6b1414823f2</identifier>
+            <name type="primary">
+                <namePart type="">The Proteome Browser</namePart>
+            </name>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.proteomebrowser.org</value>
+                    </electronic>
+                </address>
+            </location>
+            <subject type="anzsrc-for">060109</subject>
+            <subject type="anzsrc-for">110106</subject>
+            <description type="full">
+                &lt;p&gt; The Proteome Browser is an analysis tool which
+                integrates protein data from a number of proteomics and genomic data sources. It
+                displays a &amp;quot;Traffic Light&amp;quot; report , where the X axis will relate
+                to each gene (i.e. protein) ordered by default in the order found on the Chromosome,
+                and the Y axis relates to the various protein data sources/sets.&lt;/p&gt; &lt;p&gt;
+                The &amp;quot;traffic light&amp;quot; system is used to indicate cases where
+                different types of data exists and does not exist for a particular protein. Various
+                aspects of the underlying contributing information is envisaged to be available for
+                further analyses using clustering and drill down/through capabilities. The screen is
+                dynamic showing relevant information according to the type of information selected
+                on the Traffic Light Report and will provide links to external systems where
+                appropriate.&lt;/p&gt; &lt;p&gt; Example analytical functions that are envisaged
+                include: Hierarchical clustering of protein data on the X axis based on the
+                information of the other axis (similar in function to clustering tools that are
+                currently used to classify gene expression data across 10&amp;rsquo;s of
+                1000&amp;rsquo;s of data points). Similar, yet directed analysis of specific
+                proteins based on functional classification (e.g. only enzymes or structural
+                proteins (and many subsets thereof)), disease involvement (e.g. only those
+                associated with diabetes, heart disease) is also envisaged. These analysis functions
+                will assist in producing a resource that will help elucidate biological and
+                molecular function and advance diagnosis and treatment of diseases.&lt;/p&gt;
+            </description>
+            <description type="deliverymethod">
+                Software
+            </description>
+            <description type="accessRights">
+                &lt;p&gt;http://www.proteomebrowser.org/tpb/site/termsofuse.jspx&lt;/p&gt;
+            </description>
+            <relatedInfo type="website">
+                <identifier type="uri">http://www.ozhupohpp7.com</identifier>
+                <title>The Proteome Browser Project Wiki</title>
+            </relatedInfo>
+        </service>
+    </registryObject>
+</registryObjects>

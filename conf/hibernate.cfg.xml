@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD //EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="edu.monash.merc.domain.User"/>
+        <mapping class="edu.monash.merc.domain.Avatar"/>
+        <mapping class="edu.monash.merc.domain.Accession"/>
+        <mapping class="edu.monash.merc.domain.AccessionType"/>
+        <mapping class="edu.monash.merc.domain.DSVersion"/>
+        <mapping class="edu.monash.merc.domain.DBSource"/>
+        <mapping class="edu.monash.merc.domain.PEEvidence"/>
+        <mapping class="edu.monash.merc.domain.PTMEvidence"/>
+        <mapping class="edu.monash.merc.domain.NXAnnotation"/>
+        <mapping class="edu.monash.merc.domain.NXAnnEvidence"/>
+        <mapping class="edu.monash.merc.domain.NXIsoFormAnn"/>
+        <mapping class="edu.monash.merc.domain.Gene"/>
+        <mapping class="edu.monash.merc.domain.TPBDataType"/>
+        <mapping class="edu.monash.merc.domain.Profile"/>
+        <mapping class="edu.monash.merc.domain.TLGene"/>
+        <mapping class="edu.monash.merc.domain.TLColor"/>
+        <mapping class="edu.monash.merc.domain.TLPUTs"/>
+        <mapping class="edu.monash.merc.domain.TLPUTsEntry"/>
+        <mapping class="edu.monash.merc.domain.TrafficLight"/>
+        <mapping class="edu.monash.merc.domain.TPBVersion"/>
+        <mapping class="edu.monash.merc.domain.TPBGene"/>
+        <mapping class="edu.monash.merc.domain.Probe"/>
+        <mapping class="edu.monash.merc.domain.TEEvidence"/>
+        <mapping class="edu.monash.merc.domain.rifcs.RIFCSDataset"/>
+    </session-factory>
+</hibernate-configuration>

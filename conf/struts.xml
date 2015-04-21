@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.devMode" value="false"/>
+    <constant name="struts.configuration.xml.reload" value="false"/>
+    <constant name="struts.custom.i18n.resources" value="messageResource"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.action.extension" value="action,do,jspa,jspx,,"/>
+    <constant name="struts.serve.static" value="true"/>
+    <constant name="struts.serve.static.browserCache" value="false"/>
+    <constant name="struts.ui.theme" value="simple"/>
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
+    <bean type="org.apache.struts2.dispatcher.multipart.MultiPartRequest" name="merc"
+          class="edu.monash.merc.struts2.multipart.MonitoredMultiPartRequest" scope="default"/>
+    <constant name="struts.multipart.handler" value="merc"/>
+    <constant name="struts.multipart.maxSize" value="2048000000"/>
+    <!-- constant name="struts.multipart.saveDir" value="temp" / -->
+    <package name="core.merc" extends="struts-default">
+        <result-types>
+            <result-type name="freemarker" class="org.apache.struts2.views.freemarker.FreemarkerResult" default="true"/>
+            <result-type name="json" class="org.apache.struts2.json.JSONResult"/>
+            <result-type name="rawtext" class="edu.monash.merc.struts2.dispatcher.RawTextResult"/>
+            <result-type name="rss" class="edu.monash.merc.struts2.dispatcher.RssResult"/>
+        </result-types>
+
+        <interceptors>
+            <interceptor name="authenInterceptor"
+                         class="edu.monash.merc.struts2.intercepter.AuthenticationInterceptor"/>
+            <interceptor-stack name="noneAuthStack">
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+            <interceptor-stack name="authenStack">
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="authenInterceptor"/>
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="noneAuthStack"/>
+
+        <global-results>
+            <!-- show login -->
+            <result name="login" type="chain">
+                <param name="actionName">showLogin</param>
+                <param name="namespace">/user</param>
+            </result>
+
+            <result name="file_not_found" type="redirectAction">
+                <param name="actionName">redirect</param>
+                <param name="type">404</param>
+            </result>
+
+            <result name="invocation_target_exception" type="redirectAction">
+                <param name="actionName">redirect</param>
+                <param name="type">500</param>
+            </result>
+
+        </global-results>
+
+        <global-exception-mappings>
+            <exception-mapping result="file_not_found" exception="java.io.FileNotFoundException"/>
+            <exception-mapping result="invocation_target_exception"
+                               exception="java.lang.reflect.InvocationTargetException"/>
+        </global-exception-mappings>
+
+        <action name="*">
+            <result type="freemarker">/web/{1}.ftl</result>
+        </action>
+
+        <!-- home action -->
+        <action name="home" class="merc.homeAction" method="home">
+            <result type="freemarker">/web/home.ftl</result>
+        </action>
+
+        <!-- redirection action -->
+        <action name="redirect" class="merc.redirectAction" method="redirect">
+            <result type="freemarker">/web/${type}.ftl</result>
+        </action>
+
+    </package>
+
+    <package name="core.tl" extends="core.merc" namespace="/tl">
+
+        <default-interceptor-ref name="noneAuthStack"/>
+
+        <action name="*">
+            <result type="freemarker">/web/tl/{1}.ftl</result>
+        </action>
+
+        <!-- traffic light action -->
+        <action name="trafficlight" class="tl.tlAction" method="trafficLight">
+            <result name="input">/web/tl/trafficlight.ftl</result>
+            <result name="success">/web/tl/trafficlight.ftl</result>
+            <result name="error">/web/tl/trafficlight.ftl</result>
+        </action>
+
+        <!-- tpb traffic light report action -->
+        <action name="sumReport" class="tl.tlAction" method="report">
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="root">tlSumReporter</param>
+            </result>
+            <result name="error" type="json">
+                <param name="noCache">true</param>
+                <param name="root">tlSumReporter</param>
+            </result>
+        </action>
+
+        <!-- export the traffic light summary as a csv file -->
+        <action name="exportSR" class="tl.tlAction" method="exportSumReport">
+            <result name="input">/web/tl/trafficlight.ftl</result>
+            <result name="error">/web/tl/trafficlight.ftl</result>
+            <result name="success" type="stream">
+                <param name="contentType">${contentType}</param>
+                <param name="inputName">csvInputStream</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="bufferSize">${bufferSize}</param>
+            </result>
+        </action>
+
+        <!-- export the traffic lights as a csv file -->
+        <action name="exportTl" class="tl.tlAction" method="exportTL">
+            <result name="input">/web/tl/trafficlight.ftl</result>
+            <result name="error">/web/tl/trafficlight.ftl</result>
+            <result name="success" type="stream">
+                <param name="contentType">${contentType}</param>
+                <param name="inputName">csvInputStream</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="bufferSize">${bufferSize}</param>
+            </result>
+        </action>
+
+        <!-- find tpb version -->
+        <action name="findTpbVersions" class="tl.tlAction" method="findTPBVersions">
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="root">tpbVersions</param>
+            </result>
+        </action>
+
+
+        <!-- view traffic light  Evidence summary details -->
+        <action name="tlevsum" class="tl.tlAction" method="tlEvSum">
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="root">tlEvidenceResponse</param>
+                <param name="contentType">text/html</param>
+            </result>
+        </action>
+
+        <!-- view  source gene summary -->
+        <action name="srcgsum" class="tl.tlAction" method="srcGeneSum">
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="root">tlEvidenceResponse</param>
+                <param name="contentType">text/html</param>
+            </result>
+        </action>
+
+        <!-- view gene evidences -->
+        <action name="viewevidences" class="tl.tlAction" method="viewEvidences">
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="root">tlEvidenceResponse</param>
+                <param name="contentType">text/html</param>
+            </result>
+        </action>
+    </package>
+
+    <!-- rss feed action -->
+    <package name="core.rss" extends="core.merc" namespace="/rss">
+        <action name="rss" class="rss.rssFeedAction" method="rssFeed">
+            <result type="rss">
+                <param name="feedName">tpbFeed</param>
+                <param name="feedType">rss_2.0</param>
+                <param name="encoding">UTF-8</param>
+                <param name="mimeType">application/xml</param>
+            </result>
+        </action>
+    </package>
+
+    <package name="core.site" extends="core.merc" namespace="/site">
+        <!-- none authentication interceptor -->
+        <default-interceptor-ref name="noneAuthStack"/>
+        <!-- wildcard action -->
+        <action name="*">
+            <result type="freemarker">/web/site/{1}.ftl</result>
+        </action>
+
+        <!-- data source action -->
+        <action name="sources" class="site.sourcesAction" method="sources">
+            <result name="input">/web/site/sources.ftl</result>
+            <result name="error">/web/site/sources.ftl</result>
+            <result name="success">/web/site/sources.ftl</result>
+        </action>
+
+        <!-- documentation action -->
+        <action name="docs" class="site.docsAction" method="docs">
+            <result name="input">/web/site/docs.ftl</result>
+            <result name="success">/web/site/docs.ftl</result>
+        </action>
+
+        <!-- user guide action -->
+        <action name="userguide" class="site.docsAction" method="userguide">
+            <result name="input">/web/site/userguide.ftl</result>
+            <result name="success">/web/site/userguide.ftl</result>
+        </action>
+
+        <!--data type mapping action -->
+        <action name="dtmapping" class="site.docsAction" method="dtmapping">
+            <result name="input">/web/site/datatype_mapping.ftl</result>
+            <result name="success">/web/site/datatype_mapping.ftl</result>
+        </action>
+
+        <!-- download doc action -->
+        <action name="ddoc" class="site.fileDownloadAction" method="download">
+            <result name="success" type="stream">
+                <param name="contentType">${contentType}</param>
+                <param name="inputName">fileInputStream</param>
+                <param name="contentDisposition">${contentDisposition}</param>
+                <param name="bufferSize">${bufferSize}</param>
+            </result>
+        </action>
+
+        <!-- faq action -->
+        <action name="faq" class="site.faqAction" method="faq">
+            <result name="input">/web/site/faq.ftl</result>
+            <result name="success">/web/site/faq.ftl</result>
+        </action>
+
+        <!-- contribute action -->
+        <action name="contribute" class="site.contributeAction" method="contribute">
+            <result name="input">/web/site/contributors.ftl</result>
+            <result name="success">/web/site/contributors.ftl</result>
+        </action>
+
+        <!-- about us action -->
+        <action name="aboutus" class="site.aboutUsAction" method="aboutus">
+            <result name="input">/web/site/aboutus.ftl</result>
+            <result name="success">/web/site/aboutus.ftl</result>
+        </action>
+
+        <!-- show contact info action -->
+        <action name="contactusinfo" class="site.contactUsAction" method="contactinfo">
+            <result name="error">/web/common/action_error.ftl</result>
+            <result name="success">/web/site/contactus.ftl</result>
+        </action>
+
+        <!-- contact us action -->
+        <action name="contactus" class="site.contactUsAction" method="contactus">
+            <result name="input">/web/site/contactus.ftl</result>
+            <result name="error">/web/site/contactus.ftl</result>
+            <result name="success">/web/site/contactus.ftl</result>
+        </action>
+
+        <!-- terms of use action -->
+        <action name="termsofuse" class="site.termsAction" method="termsofuse">
+            <result name="input">/web/site/termsofuse.ftl</result>
+            <result name="success">/web/site/termsofuse.ftl</result>
+        </action>
+    </package>
+
+    <!-- security code action -->
+    <package name="core.securityCode" extends="core.merc" namespace="/security">
+        <default-interceptor-ref name="noneAuthStack"/>
+        <action name="securityCode" class="security.captchaImgAction" method="securityCode">
+            <result name="success" type="stream">
+                <param name="contentType">image/jpeg</param>
+                <param name="inputName">imageStream</param>
+                <param name="allowCaching">false</param>
+                <param name="bufferSize">1024</param>
+            </result>
+        </action>
+    </package>
+
+    <!-- pie chart action -->
+    <package name="merc.chart" extends="jfreechart-default" namespace="/chart">
+        <action name="sumchart" class="tl.sumChartAction" method="piechart">
+            <result name="success" type="chart">
+                <param name="width">420</param>
+                <param name="height">300</param>
+            </result>
+        </action>
+    </package>
+</struts>

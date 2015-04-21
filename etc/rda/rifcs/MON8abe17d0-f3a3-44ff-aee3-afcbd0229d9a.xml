@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="Human Protein Atlas Consortium">
+        <key>MON8abe17d0-f3a3-44ff-aee3-afcbd0229d9a</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <party type="group">
+            <name type="primary">
+                <namePart type="">Human Protein Atlas Consortium</namePart>
+            </name>
+            <identifier type="local">MON8abe17d0-f3a3-44ff-aee3-afcbd0229d9a</identifier>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.proteinatlas.org/about/organization</value>
+                    </electronic>
+                    <electronic type="email">
+                        <value>contact@proteinatlas.org</value>
+                    </electronic>
+                </address>
+            </location>
+            <description type="full">
+                &lt;p&gt;The Swedish Human Protein Atlas project, funded by the Knut and Alice Wallenberg Foundation,
+                has been set up to allow for a systematic exploration of the human proteome using Antibody-Based
+                Proteomics. This is accomplished by combining high-throughput generation of affinity-purified antibodies
+                with protein profiling in a multitude of tissues and cells assembled in tissue microarrays. Confocal
+                microscopy analysis using human cell lines is performed for more detailed protein localization. The
+                program hosts the Human Protein Atlas portal with expression profiles of human proteins in tissues and
+                cells.&lt;/p&gt;
+                &lt;p&gt;The main sites are located at AlbaNova and SciLifeLab, KTH - Royal Institute of Technology,
+                Stockholm, Sweden, the Rudbeck Laboratory, Uppsala University, Uppsala, Sweden and Lab Surgpath, Mumbai,
+                India. The main objective of the resource centre is to produce specific antibodies to human target
+                proteins using a high-throughput production method involving the cloning and protein expression of
+                Protein Epitope Signature Tags (PrESTs). After purification, the antibodies are used to study expression
+                profiles in cells and tissues and for functional analysis of the corresponding proteins in a wide range
+                of platforms. The Stockholm sites are responsible for generating high-quality antibodies and to perform
+                the immunofluorescence analysis, the Uppsala site is responsible for large-scale protein profiling in
+                tissues and cells using immunohistochemistry and the Mumbai site for the annotation of the
+                immunohistochemistry images.&lt;/p&gt;
+            </description>
+            <subject type="anzsrc-for">110702</subject>
+        </party>
+    </registryObject>
+</registryObjects>

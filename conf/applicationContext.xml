@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+					http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+					http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+					http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+					http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+					http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.1.xsd"
+       default-lazy-init="false">
+
+    <!-- Using annotation configuration -->
+    <context:annotation-config/>
+
+    <!-- Auto-scan annotation, and start from package name -->
+    <context:component-scan base-package="edu.monash.merc"/>
+
+    <!-- System properties configurator -->
+    <bean id="systemPropConfigurator" class="edu.monash.merc.system.config.SystemPropertyConfigurator">
+        <!-- merc.properties file -->
+        <property name="locations">
+            <list>
+                <value>classpath:merc.properties</value>
+                <value>classpath:rifcs.properties</value>
+            </list>
+        </property>
+        <property name="ignoreResourceNotFound" value="false"/>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    </bean>
+
+    <!-- jdbc, mail and cron jobs properties config -->
+    <bean id="propertyConfigurator" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+                <value>classpath:mail.properties</value>
+                <value>classpath:cron.properties</value>
+            </list>
+        </property>
+        <property name="ignoreResourceNotFound" value="false"/>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    </bean>
+
+    <!--System init Database configuration -->
+    <bean id="dbXmlConfigurator" class="edu.monash.merc.system.config.SystemDBXmlConfigurator">
+        <property name="location" value="classpath:tpbInitDb.xml"/>
+        <property name="ignoreResourceNotFound" value="false"/>
+    </bean>
+
+    <!-- Freemarker Mail Template configuration -->
+    <bean id="mailFreeMarker" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <!-- FreeMarker template file -->
+        <property name="templateLoaderPath" value="classpath:mailTemplates"/>
+        <!-- FreeMarker env setting -->
+        <property name="freemarkerSettings">
+            <props>
+                <!--update template delay -->
+                <prop key="template_update_delay">1800</prop>
+                <!--template encodding -->
+                <prop key="default_encoding">UTF-8</prop>
+                <!-- template localcy -->
+                <prop key="locale">en_US</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Freemarker Rifcs Template configuration -->
+    <bean id="rifcsFreeMarker" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <!-- FreeMarker template file -->
+        <property name="templateLoaderPath" value="classpath:rifcs_templates"/>
+        <!-- FreeMarker env setting -->
+        <property name="freemarkerSettings">
+            <props>
+                <!--update template delay -->
+                <prop key="template_update_delay">1800</prop>
+                <!--template encodding -->
+                <prop key="default_encoding">UTF-8</prop>
+                <!-- template localcy -->
+                <prop key="locale">en_US</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Mail Sender configuration -->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="${smtp.mail.server}"/>
+        <property name="port" value="${mail.server.port}"/>
+        <property name="username" value="${mail.server.username}"/>
+        <property name="password" value="${mail.server.userpassword}"/>
+        <property name="javaMailProperties">
+            <props>
+                <!-- Use SMTP-AUTH to authenticate to SMTP server -->
+                <prop key="mail.smtp.auth">${mail.smtp.auth}</prop>
+                <!-- Use TLS to encrypt communication with SMTP server -->
+                <prop key="mail.smtp.starttls.enable">${mail.smtp.starttls.enable}</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- cron job scheduled task for imporing the data from nextprot, gpm and hpa -->
+    <!-- see the cron.properties file -->
+    <task:scheduled-tasks>
+        <task:scheduled ref="tpbDataProcessor" method="process" cron="${tpb.data.process.cron.expression}"/>
+    </task:scheduled-tasks>
+
+    <!-- cron job scheduled task for create rifcs files based on the traffic light -->
+    <!-- see the cron.properties file -->
+    <task:scheduled-tasks>
+        <task:scheduled ref="rifcsProcessor" method="process" cron="${rifcs.process.cron.expression}"/>
+    </task:scheduled-tasks>
+
+    <!-- Datasource configuration -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driverClassName}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="autoCommitOnClose" value="true"/>
+        <property name="checkoutTimeout" value="${cpool.checkoutTimeout}"/>
+        <property name="initialPoolSize" value="${cpool.minPoolSize}"/>
+        <property name="minPoolSize" value="${cpool.minPoolSize}"/>
+        <property name="maxPoolSize" value="${cpool.maxPoolSize}"/>
+        <property name="maxIdleTime" value="${cpool.maxIdleTime}"/>
+        <property name="acquireIncrement" value="${cpool.acquireIncrement}"/>
+        <property name="maxIdleTimeExcessConnections" value="${cpool.maxIdleTimeExcessConnections}"/>
+        <property name="numHelperThreads" value="${cpool.numHelperThreads}"/>
+        <property name="maxAdministrativeTaskTime" value="${cpool.maxAdministrativeTaskTime}"/>
+    </bean>
+
+    <!-- Annotation Session Factory Bean -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
+          destroy-method="destroy">
+
+        <!-- reference the datasource -->
+        <property name="dataSource" ref="dataSource"/>
+        <!-- configuration file location -->
+        <property name="configLocation">
+            <value>classpath:hibernate.cfg.xml</value>
+        </property>
+        <!-- hibernate properties -->
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.jdbc.dialect}</prop>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Transaction manager -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- Annotation driven transaction -->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- Aspect Advice Transaction Configuration -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="create*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="import*" propagation="REQUIRED"/>
+            <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- Aop point cut configuration for service operations -->
+    <aop:config>
+        <aop:pointcut id="appServiceOperations" expression="execution(* edu.monash.merc.service.impl.*ServiceImpl.*(..))"/>
+        <aop:advisor id="tpbAd" advice-ref="txAdvice" pointcut-ref="appServiceOperations"/>
+    </aop:config>
+</beans>

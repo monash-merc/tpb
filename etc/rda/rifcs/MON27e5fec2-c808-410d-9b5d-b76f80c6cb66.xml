@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="Seattle Proteome Center (SPC)">
+        <key>MON27e5fec2-c808-410d-9b5d-b76f80c6cb66</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <collection type="dataset">
+            <name type="primary">
+                <namePart type="">PeptideAtlas</namePart>
+            </name>
+            <identifier type="local">MON27e5fec2-c808-410d-9b5d-b76f80c6cb66</identifier>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.peptideatlas.org/</value>
+                    </electronic>
+                </address>
+            </location>
+            <description type="full">
+                &lt;p&gt;PeptideAtlas is a multi-organism, publicly accessible compendium of peptides identified in a
+                large set of tandem mass spectrometry proteomics experiments. Mass spectrometer output files are
+                collected for human, mouse, yeast, and several other organisms, and searched using the latest search
+                engines and protein sequences. All results of sequence and spectral library searching are subsequently
+                processed through the&amp;nbsp; &lt;a
+                href="http://tools.proteomecenter.org/wiki/index.php?title=Software:TPP" target="_blank"&gt;Trans
+                Proteomic Pipeline&lt;/a&gt; to derive a probability of correct identification for all results in a
+                uniform manner to insure a high quality database, along with false discovery rates at the whole atlas
+                level. Results may be queried and browsed at the PeptideAtlas web site. The raw data, search results,
+                and full builds can also be downloaded for other uses.&lt;/p&gt;
+                &lt;p&gt;
+                &amp;nbsp;&lt;/p&gt;
+            </description>
+            <description type="logo">
+                &lt;p&gt;http://www.peptideatlas.org/images/pa_transparent_background1.gif&lt;/p&gt;
+            </description>
+            <description type="rights">
+                It is the policy of PeptideAtlas to make publicly available for
+                download as much of the raw data we use to build the PeptideAtlas as possible.
+                This includes datasets that have been previously published or otherwise released
+                by the data producers. If you download and use these data in a published work,
+                please cite the associated article (or data contributors if unpublished); an
+                acknowledgement of the PeptideAtlas repository would also be appreciated. There
+                are also many unpublished raw datasets used to build the PeptideAtlas, and these
+                are not made available for download until publication or release by the
+                producers.
+            </description>
+            <relatedObject>
+                <key>MON3e010934-f57b-4704-bc44-74ac32429e9d</key>
+                <relation type="isOwnedBy">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <relatedObject>
+                <key>MONebcb3d9b-324f-47d5-9591-a6b1414823f2</key>
+                <relation type="isOperatedOnBy">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <subject type="anzsrc-for">030406</subject>
+            <subject type="anzsrc-for">060109</subject>
+            <subject type="anzsrc-for">110106</subject>
+        </collection>
+    </registryObject>
+</registryObjects>

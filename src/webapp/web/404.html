@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>404 Page Not Found</title>
+    <style type="text/css">
+        .redirect_div {
+            border: solid 1px #F2F2F2;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -moz-box-shadow: 0 0 5px #f2f2f2;
+            -webkit-box-shadow: 0 0 5px #f2f2f2;
+            box-shadow: 0 0 5px #f2f2f2;
+            color: #666666;
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .redirect_inner_div {
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .redirect_title img {
+            margin-bottom: 10px;
+        }
+
+        .redirect_msg {
+            color: #002061;
+        }
+
+        .redirect_hints {
+            font-size: 11px;
+        }
+
+        .redirect_hints a:link, .redirect_hints a:visited {
+            text-decoration: none;
+            width: 40px;
+            color: #002061;
+        }
+
+        .redirect_hints a:hover, .redirect_hints a:active {
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        function jump() {
+            var protocol = window.location.protocol;
+            var host = window.location.host;
+            var pathArray = window.location.pathname.split('/');
+            location.href = protocol + "//" + host + "/" + pathArray[1] + "/home.jspx";
+        }
+    </script>
+</head>
+<body onload="setTimeout('jump()', 5000)">
+<br/>
+<br/>
+<br/>
+
+<div class="redirect_div">
+    <div class="redirect_inner_div">
+        <br/>
+        <span class="redirect_title">
+            <img src="images/stop.png" border="0" align="middle"/> <b>The requested page is not
+            available.</b>
+        </span>
+        <br/>
+        <br/>
+        <span class="redirect_msg">After a few seconds, the page will redirect to the home page ...</span>
+        <br/>
+        <br/>
+        <span class="redirect_hints">
+            Problems with the redirect? Please use this <a href='${base}/home.jspx'>direct link</a>.
+        </span>
+        <br/>
+        <br/>
+
+        <div style="clear:both"></div>
+    </div>
+</div>
+</body>
+</html>
+

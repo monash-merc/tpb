@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="Seattle Proteome Center (SPC)">
+        <key>MON3e010934-f57b-4704-bc44-74ac32429e9d</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <party type="group">
+            <name type="primary">
+                <namePart type="">Seattle Proteome Center (SPC)</namePart>
+            </name>
+            <identifier type="local">MON3e010934-f57b-4704-bc44-74ac32429e9d</identifier>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.proteomecenter.org/</value>
+                    </electronic>
+                    <physical type="streetAddress">
+                        <addressPart type="text">
+                            c/o Institute for Systems Biology 401 Terry Avenue North Seattle, WA 98109-5234 USA
+                        </addressPart>
+                    </physical>
+                </address>
+            </location>
+            <description type="full">
+                &lt;p&gt;The goal of the Seattle Proteome Center (SPC) is to evolve as a local, highly interactive,
+                multi-disciplinary group, bringing together scientific expertise from diverse areas such as biology,
+                chemistry, proteomics, physics, bioinformatics, and statistics, to enhance and develop innovative
+                proteomic technologies and apply them to biological questions relevant to systems biology and,
+                ultimately, human health and well-being.&lt;/p&gt;
+                &lt;p&gt;The focus of the Center is the development of an array of new, systematic tools and techniques
+                for the analysis of proteins and to create assays to comprehensively study the dynamics of cells in
+                health and disease. Validated technologies with generic applicability are broadly disseminated here from
+                both tools, techniques and comprehensive data sets in an open source manner.&lt;/p&gt;
+            </description>
+            <subject type="anzsrc-for">060109</subject>
+            <subject type="anzsrc-for">110106</subject>
+        </party>
+    </registryObject>
+</registryObjects>

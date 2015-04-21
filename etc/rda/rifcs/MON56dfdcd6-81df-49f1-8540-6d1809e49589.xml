@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="Human Protein Atlas Consortium">
+        <key>MON56dfdcd6-81df-49f1-8540-6d1809e49589</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <collection type="dataset">
+            <name type="primary">
+                <namePart type="">The Human Protein Atlas</namePart>
+            </name>
+            <identifier type="local">MON56dfdcd6-81df-49f1-8540-6d1809e49589</identifier>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.proteinatlas.org/</value>
+                    </electronic>
+                </address>
+            </location>
+            <description type="full">
+                &lt;p&gt;The Human Protein Atlas portal is a publicly available database with millions of
+                high-resolution images showing the spatial distribution of proteins in 46 different normal human tissues
+                and 20 different cancer types, as well as 47 different human cell lines. The data is released together
+                with application-specific validation performed for each antibody, including immunohistochemisty, Western
+                blot analysis and, for a large fraction, a protein array assay and immunofluorescent based confocal
+                microscopy. The database has been developed in a gene-centric manner with the inclusion of all human
+                genes predicted from genome efforts. Search functionalities allow for complex queries regarding protein
+                expression profiles, protein classes and chromosome location.&lt;/p&gt;
+            </description>
+            <description type="logo">
+                &lt;p&gt;http://www.proteinatlas.org/images_static/logo_text_small.gif&lt;/p&gt;
+            </description>
+            <description type="rights">
+                The use of data and images from this site in publications and
+                presentations is permitted provided that the following conditions are met: The
+                publication and/or presentation are solely for informational and non-commercial
+                purposes. The source of the data and/or image is referred to this site
+                (www.proteinatlas.org) and/or one or more of our publications are cited.
+            </description>
+            <relatedObject>
+                <key>MON8abe17d0-f3a3-44ff-aee3-afcbd0229d9a</key>
+                <relation type="isOwnedBy">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <relatedObject>
+                <key>MONebcb3d9b-324f-47d5-9591-a6b1414823f2</key>
+                <relation type="isOperatedOnBy">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <relatedInfo type="publication">
+                <identifier type="doi">doi:10.1038/nbt1210-1248</identifier>
+                <title>Uhlen M, Oksvold P, Fagerberg L, Lundberg E, Jonasson K, Forsberg M, Zwahlen M, Kampf C, Wester
+                    K, Hober S, Wernerus H, Bjorling L, Ponten F. Towards a knowledge-based Human Protein Atlas. Nat
+                    Biotechnol. 2010 28(12):1248-50.
+                </title>
+                <notes/>
+            </relatedInfo>
+        </collection>
+    </registryObject>
+</registryObjects>

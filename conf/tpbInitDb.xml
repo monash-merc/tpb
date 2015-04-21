@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tpb name="initData">
+    <dataType>
+        <entities>
+            <entity type="PE">
+                <property name="DisplayName">Protein Expression</property>
+                <property name="TLLevel">1</property>
+                <property name="ParentRefId"/>
+            </entity>
+            <entity type="PE_MS">
+                <property name="DisplayName">Protein Expression by Mass Spectrometry</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">PE</property>
+            </entity>
+            <entity type="PE_MS_ANN">
+                <property name="DisplayName">Annotation of protein expression by Mass Spectrometry</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PE_MS</property>
+            </entity>
+            <entity type="PE_MS_PROB">
+                <property name="DisplayName">Probability-based MS detection of protein expression</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PE_MS</property>
+            </entity>
+            <entity type="PE_MS_SAM">
+                <property name="DisplayName">Frequency of MS detection</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PE_MS</property>
+            </entity>
+            <entity type="PE_ANTI">
+                <property name="DisplayName">Protein expression by antibody technologies</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">PE</property>
+            </entity>
+            <entity type="PE_ANTI_ANN">
+                <property name="DisplayName">Annotation of antibodies</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PE_ANTI</property>
+            </entity>
+            <entity type="PE_ANTI_IHC">
+                <property name="DisplayName">Immunohistochemical detection of protein expression</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PE_ANTI</property>
+            </entity>
+            <entity type="PE_ANTI_IHC_NORM">
+                <property name="DisplayName">Immunohistochemical detection in normal tissues</property>
+                <property name="TLLevel">4</property>
+                <property name="ParentRefId">PE_ANTI_IHC</property>
+            </entity>
+            <entity type="PE_OTH">
+                <property name="DisplayName">Other evidence for protein expression</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">PE</property>
+            </entity>
+            <entity type="PE_OTH_CUR">
+                <property name="DisplayName">Curated annotation of protein expression</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PE_OTH</property>
+            </entity>
+            <entity type="SEQ">
+                <property name="DisplayName">Sequence Variation</property>
+                <property name="TLLevel">1</property>
+                <property name="ParentRefId"/>
+            </entity>
+            <entity type="SEQ_ISO">
+                <property name="DisplayName">SeqVar Isoforms</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">SEQ</property>
+            </entity>
+            <entity type="SEQ_ISO_CNT">
+                <property name="DisplayName">SeqVar Isoform Count</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">SEQ_ISO</property>
+            </entity>
+            <entity type="SEQ_SNP">
+                <property name="DisplayName">SeqVar SNPs</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">SEQ</property>
+            </entity>
+            <entity type="SEQ_SNP_CNT">
+                <property name="DisplayName">SeqVar SNPs Count</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">SEQ_SNP</property>
+            </entity>
+            <entity type="SEQ_VAR">
+                <property name="DisplayName">SeqVar Variants</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">SEQ</property>
+            </entity>
+            <entity type="SEQ_VAR_CNT">
+                <property name="DisplayName">SeqVar Variant Count</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">SEQ_VAR</property>
+            </entity>
+            <entity type="PTM">
+                <property name="DisplayName">Post-translational Modifications</property>
+                <property name="TLLevel">1</property>
+                <property name="ParentRefId"/>
+            </entity>
+            <entity type="PTM_GLY">
+                <property name="DisplayName">Glycosylation</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">PTM</property>
+            </entity>
+            <entity type="PTM_GLY_NLNK">
+                <property name="DisplayName">N-linked Glycosylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_GLY</property>
+            </entity>
+            <entity type="PTM_GLY_OLNK">
+                <property name="DisplayName">O-linked Glycosylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_GLY</property>
+            </entity>
+            <entity type="PTM_GLY_GLY">
+                <property name="DisplayName">Glycation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_GLY</property>
+            </entity>
+            <entity type="PTM_GLY_OTH">
+                <property name="DisplayName">Other Glycosylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_GLY</property>
+            </entity>
+            <entity type="PTM_PHS">
+                <property name="DisplayName">Phosphorylation</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">PTM</property>
+            </entity>
+            <entity type="PTM_PHS_SER">
+                <property name="DisplayName">Phosphoserine</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_PHS</property>
+            </entity>
+            <entity type="PTM_PHS_THR">
+                <property name="DisplayName">Phosphothreonine</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_PHS</property>
+            </entity>
+            <entity type="PTM_PHS_TYR">
+                <property name="DisplayName">Phosphotyrosine</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_PHS</property>
+            </entity>
+            <entity type="PTM_PHS_OTH">
+                <property name="DisplayName">Other Phosphorylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_PHS</property>
+            </entity>
+            <entity type="PTM_ACE">
+                <property name="DisplayName">Acetylation</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">PTM</property>
+            </entity>
+            <entity type="PTM_ACE_NTA">
+                <property name="DisplayName">N-terminal Acetylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_ACE</property>
+            </entity>
+            <entity type="PTM_ACE_LYS">
+                <property name="DisplayName">Lysine Acetylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_ACE</property>
+            </entity>
+            <entity type="PTM_ACE_OAC">
+                <property name="DisplayName">O-acetylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_ACE</property>
+            </entity>
+            <entity type="PTM_ACE_OTH">
+                <property name="DisplayName">Other Acetylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_ACE</property>
+            </entity>
+            <entity type="PTM_LPD">
+                <property name="DisplayName">Lipidation</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">PTM</property>
+            </entity>
+            <entity type="PTM_LPD_PRN">
+                <property name="DisplayName">Prenylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_LPD</property>
+            </entity>
+            <entity type="PTM_LPD_MYR">
+                <property name="DisplayName">Myristoylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_LPD</property>
+            </entity>
+            <entity type="PTM_LPD_PLM">
+                <property name="DisplayName">Palmitoylation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_LPD</property>
+            </entity>
+            <entity type="PTM_LPD_GPI">
+                <property name="DisplayName">GPI-anchor</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_LPD</property>
+            </entity>
+            <entity type="PTM_LPD_OTH">
+                <property name="DisplayName">Other Lipidation</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_LPD</property>
+            </entity>
+            <entity type="PTM_CLV">
+                <property name="DisplayName">Cleavage</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">PTM</property>
+            </entity>
+            <entity type="PTM_CLV_SIG">
+                <property name="DisplayName">Signal Peptide</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_CLV</property>
+            </entity>
+            <entity type="PTM_CLV_PRO">
+                <property name="DisplayName">Propeptide</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_CLV</property>
+            </entity>
+            <entity type="PTM_CLV_OTH">
+                <property name="DisplayName">Other Cleavage</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_CLV</property>
+            </entity>
+            <entity type="PTM_OTH">
+                <property name="DisplayName">Other</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">PTM</property>
+            </entity>
+            <entity type="PTM_OTH_SS">
+                <property name="DisplayName">Disulfide</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_OTH</property>
+            </entity>
+            <entity type="PTM_OTH_UNC">
+                <property name="DisplayName">Other Unclassified</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">PTM_OTH</property>
+            </entity>
+            <entity type="DIS">
+                <property name="DisplayName">Disease</property>
+                <property name="TLLevel">1</property>
+                <property name="ParentRefId"/>
+            </entity>
+            <entity type="DIS_CAN">
+                <property name="DisplayName">Cancer-related</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">DIS</property>
+            </entity>
+            <entity type="DIS_OTH">
+                <property name="DisplayName">Unclassified Disease</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">DIS</property>
+            </entity>
+            <entity type="STR">
+                <property name="DisplayName">Structural Information</property>
+                <property name="TLLevel">1</property>
+                <property name="ParentRefId"/>
+            </entity>
+            <entity type="STR_3D">
+                <property name="DisplayName">3D-Structure</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">STR</property>
+            </entity>
+            <entity type="STR_3D_XRAY">
+                <property name="DisplayName">X-Ray 3D-Structure</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">STR_3D</property>
+            </entity>
+            <entity type="STR_3D_NMR">
+                <property name="DisplayName">NMR 3D-Structure</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">STR_3D</property>
+            </entity>
+            <entity type="STR_3D_OTH">
+                <property name="DisplayName">Other 3D-Structure</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">STR_3D</property>
+            </entity>
+            <entity type="STR_HOM">
+                <property name="DisplayName">Sequence Homologies</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">STR</property>
+            </entity>
+            <entity type="STR_HOM_MTF">
+                <property name="DisplayName">Sequence Motifs</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">STR_HOM</property>
+            </entity>
+            <entity type="STR_HOM_DOM">
+                <property name="DisplayName">Structural Domains</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">STR_HOM</property>
+            </entity>
+            <entity type="STR_HOM_OTH">
+                <property name="DisplayName">Other Sequence Homologies</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">STR_HOM</property>
+            </entity>
+            <entity type="LOC">
+                <property name="DisplayName">Locational Information</property>
+                <property name="TLLevel">1</property>
+                <property name="ParentRefId"/>
+            </entity>
+            <entity type="LOC_SBC">
+                <property name="DisplayName">Subcellular Location</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">LOC</property>
+            </entity>
+            <entity type="LOC_CLT">
+                <property name="DisplayName">Cell-type Expression</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">LOC</property>
+            </entity>
+            <entity type="LOC_TIS">
+                <property name="DisplayName">Tissue-type Expression</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">LOC</property>
+            </entity>
+            <entity type="TE">
+                <property name="DisplayName">Transcript Expression</property>
+                <property name="TLLevel">1</property>
+                <property name="ParentRefId"/>
+            </entity>
+            <entity type="TE_MA">
+                <property name="DisplayName">MicroArray Transcript Expression</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">TE</property>
+            </entity>
+            <entity type="TE_MA_PROP">
+                <property name="DisplayName">MicroArray Sample Proportion</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">TE_MA</property>
+            </entity>
+            <entity type="TE_OTH">
+                <property name="DisplayName">Other evidence for transcript expression</property>
+                <property name="TLLevel">2</property>
+                <property name="ParentRefId">TE</property>
+            </entity>
+            <entity type="TE_OTH_CUR">
+                <property name="DisplayName">Curated annotation of transcript expression</property>
+                <property name="TLLevel">3</property>
+                <property name="ParentRefId">TE_OTH</property>
+            </entity>
+        </entities>
+    </dataType>
+    <color>
+        <entities>
+            <entity>
+                <property name="TLColor">Black</property>
+                <property name="ColorLevel">1</property>
+            </entity>
+            <entity>
+                <property name="TLColor">Red</property>
+                <property name="ColorLevel">2</property>
+            </entity>
+            <entity>
+                <property name="TLColor">Yellow</property>
+                <property name="ColorLevel">3</property>
+            </entity>
+            <entity>
+                <property name="TLColor">Green</property>
+                <property name="ColorLevel">4</property>
+            </entity>
+        </entities>
+    </color>
+</tpb>

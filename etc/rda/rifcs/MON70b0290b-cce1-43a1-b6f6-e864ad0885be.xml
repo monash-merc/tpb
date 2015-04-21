@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="SIB Swiss Institute of Bioinformatics">
+        <key>MON70b0290b-cce1-43a1-b6f6-e864ad0885be</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <collection type="dataset">
+            <name type="primary">
+                <namePart type="">neXtProt</namePart>
+            </name>
+            <identifier type="local">MON70b0290b-cce1-43a1-b6f6-e864ad0885be</identifier>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.nextprot.org/</value>
+                    </electronic>
+                </address>
+            </location>
+            <description type="full">
+                &lt;p&gt;Developed in collaboration between the SIB Swiss Institute of Bioinformatics and Geneva
+                Bioinformatics (GeneBio) SA, neXtProt is being developed to be a comprehensive human-centric discovery
+                platform, offering its users a seamless integration of and navigation through protein-related data. It
+                is based on the first complete manual annotation work by the UniProt/SwissProt group of what is believed
+                to be the full set of human proteins.&lt;/p&gt;
+            </description>
+            <description type="logo">
+                &lt;p&gt;http://www.nextprot.org/db/images/blueflat/np.png&lt;/p&gt;
+            </description>
+            <description type="note">
+                &lt;p&gt;neXtProt is:&lt;/p&gt;
+                &lt;ul&gt;
+                &lt;li&gt;
+                Adding more information to the corpus of data on human proteins that is already in Swiss-Prot. In
+                addition, data originating from a variety of high-throughput approaches (such as micro-array, antibodies
+                screens, proteomics, interactomics, structural genomics) are being added to neXtProt. All of these data
+                sets are carefully selected so as to only provide high-quality data. This will include:&amp;nbsp;High-quality
+                proteomics experimental data,&amp;nbsp;siRNA experimental data, &amp;nbsp;3D experimental data,&amp;nbsp;Pathway
+                data,&amp;nbsp;Population-related variant information and&amp;nbsp;Protein-protein and protein-drug
+                interaction data.&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;ul&gt;
+                &lt;li&gt;
+                Organizing the data in such a way that it is possible to seamlessly build powerful queries in the most
+                user-friendly way possible.&lt;br /&gt;
+                &amp;nbsp;&lt;/li&gt;
+                &lt;li&gt;
+                Developing software tools ranging from sequence analysis to text and data mining to be integrated in
+                various research environments. These tools will meet the specific needs of both academic and industrial
+                users.&lt;/li&gt;
+                &lt;/ul&gt;
+            </description>
+            <description type="rights">
+                neXtProt is copyrighted by the SIB Swiss Institute of Bioinformatics and Geneva
+                Bioinformatics (GeneBio) SA, and distributed under the Creative Commons
+                Attribution-NoDerivs License (http://creativecommons.org/licenses/by-nd/3.0/").
+            </description>
+            <relatedObject>
+                <key>MONc5ed992e-e525-4a0f-aa43-1da05a9a800d</key>
+                <relation type="isOwnedBy">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <relatedObject>
+                <key>MON3dff4c2b-87ca-4607-8d94-3837af4523f3</key>
+                <relation type="isOwnedBy">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <relatedObject>
+                <key>MONebcb3d9b-324f-47d5-9591-a6b1414823f2</key>
+                <relation type="isOperatedOnBy">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <subject type="anzsrc-for">110106</subject>
+            <subject type="anzsrc-for">060109</subject>
+            <relatedInfo type="website">
+                <identifier type="uri">http://www.isb-sib.ch/</identifier>
+                <title>SIB Swiss Institute of Bioinformatics</title>
+                <notes/>
+            </relatedInfo>
+            <relatedInfo type="website">
+                <identifier type="uri">http://www.genebio.com/index.html</identifier>
+                <title>Geneva Bioinformatics (GeneBio) SA</title>
+                <notes/>
+            </relatedInfo>
+            <relatedInfo type="website">
+                <identifier type="uri">http://www.uniprot.org/help/about</identifier>
+                <title>UniProt / SwissProt</title>
+                <notes/>
+            </relatedInfo>
+        </collection>
+    </registryObject>
+</registryObjects>

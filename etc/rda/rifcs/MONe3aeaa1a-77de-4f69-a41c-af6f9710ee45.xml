@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="Monash University">
+        <key>MONe3aeaa1a-77de-4f69-a41c-af6f9710ee45</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <party type="group">
+            <identifier type="local">MONe3aeaa1a-77de-4f69-a41c-af6f9710ee45</identifier>
+            <name type="abbreviated">
+                <namePart>MeRC</namePart>
+            </name>
+            <name type="primary">
+                <namePart type="">Monash e-Research Centre</namePart>
+            </name>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.monash.edu.au/eresearch/</value>
+                    </electronic>
+                    <electronic type="email">
+                        <value>merc@monash.edu</value>
+                    </electronic>
+                </address>
+            </location>
+            <relatedObject>
+                <key>MONebcb3d9b-324f-47d5-9591-a6b1414823f2</key>
+                <relation type="isManagerOf">
+                    <url/>
+                </relation>
+            </relatedObject>
+            <subject type="anzsrc-for">0806</subject>
+            <description type="full">&lt;p&gt;
+                The Monash e-Research Centre (MeRC) is a partnership between the Deputy Vice-Chancellor (Research), the
+                Office of the CIO, the Library and the Faculty of Information Technology, providing specialist advice
+                and customised e-Research solutions for researchers of all disciplines.&lt;/p&gt;
+                &lt;p&gt;
+                The key areas are:&lt;/p&gt;
+                &lt;ul&gt;
+                &lt;li&gt;
+                Collaboration Services&lt;/li&gt;
+                &lt;li&gt;
+                High Performance Computing&lt;/li&gt;
+                &lt;li&gt;
+                Visualisation&lt;/li&gt;
+                &lt;li&gt;
+                Data Storage and Management&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;p&gt;
+                MeRC empowers Monash University and other researchers with customised ICT solutions and on-going support
+                and platforms throughout a research project, enabling faster, better and more creative research.&lt;/p&gt;</description>
+        </party>
+    </registryObject>
+</registryObjects>

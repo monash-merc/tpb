@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="Geneva Bioinformatics (GeneBio) SA">
+        <key>MON3dff4c2b-87ca-4607-8d94-3837af4523f3</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <party type="group">
+            <name type="primary">
+                <namePart type="">Geneva Bioinformatics (GeneBio) SA</namePart>
+            </name>
+            <identifier type="local">MON3dff4c2b-87ca-4607-8d94-3837af4523f3</identifier>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.genebio.com/</value>
+                    </electronic>
+                    <physical type="postalAddress">
+                        <addressPart type="text">
+                            Geneva Bioinformatics (GeneBio) SA c/o SIB Swiss Institute of Bioinformatics CMU -&amp;nbsp;Rue
+                            Michel-Servet 1211 Geneva Switzerland
+                        </addressPart>
+                    </physical>
+                </address>
+            </location>
+            <description type="full">
+                &lt;p&gt;Geneva Bioinformatics (GeneBio) SA is a leading bioinformatics company providing the life
+                sciences community with world-class software that bridges the gap between information gathering and
+                knowledge generation. Established in 1997, we focus our expertise on Mass Spectrometry characterization
+                of proteins and small molecules as well as proteome imaging, offering clients and partners a high degree
+                of specialization essential to their research. Close ties to academic peers and a thorough network of
+                distribution and strategic partners give us both unfettered access to scientific excellence and
+                recognized market presence so that we may best serve the scientific community.&lt;/p&gt;
+            </description>
+            <description type="logo">
+                &lt;p&gt;http://www.genebio.com/images/logo_gb91.gif&lt;/p&gt;
+            </description>
+            <subject type="anzsrc-for">060102</subject>
+        </party>
+    </registryObject>
+</registryObjects>

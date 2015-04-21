@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/documentation/rifcs/1.2.0/schema/registryObjects.xsd">
+    <registryObject group="SIB Swiss Institute of Bioinformatics">
+        <key>MONc5ed992e-e525-4a0f-aa43-1da05a9a800d</key>
+        <originatingSource>http://www.proteomebrowser.org</originatingSource>
+        <party type="group">
+            <name type="primary">
+                <namePart type="">SIB Swiss Institute of Bioinformatics</namePart>
+            </name>
+            <identifier type="local">MONc5ed992e-e525-4a0f-aa43-1da05a9a800d</identifier>
+            <location>
+                <address>
+                    <electronic type="url">
+                        <value>http://www.isb-sib.ch/</value>
+                    </electronic>
+                </address>
+            </location>
+            <description type="full">
+                &lt;p&gt;The SIB Swiss Institute of Bioinformatics is an academic, non-profit foundation recognised of
+                public utility and established in 1998. SIB coordinates research and education in bioinformatics
+                throughout Switzerland and provides high quality bioinformatics services to the Swiss and international
+                research community.&lt;/p&gt;
+            </description>
+            <description type="logo">
+                &lt;p&gt;http://www.isb-sib.ch/templates/sib/images/sib_logo_home.gif&lt;/p&gt;
+            </description>
+            <subject type="anzsrc-for">060102</subject>
+        </party>
+    </registryObject>
+</registryObjects>
