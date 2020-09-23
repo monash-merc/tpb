@@ -77,7 +77,7 @@
     <!-- Cleans up compiled classes                                          -->
     <!-- =================================================================== -->
     <target name="clean">
-        <echo>Deleling the build classes directory</echo>
+        <echo>Deleting the build classes directory</echo>
         <delete dir="${build.dir}"/>
         <mkdir dir="${build.dir}"/>
     </target>
@@ -86,7 +86,7 @@
     <!-- Cleans up all                                                       -->
     <!-- =================================================================== -->
     <target name="clean-all">
-        <echo>Deleling the build classes, deploy directories</echo>
+        <echo>Deleting the build classes, deploy directories</echo>
         <delete dir="${build.dir}"/>
         <delete dir="${deploy.dir}"/>
         <delete dir="${dist.dir}"/>
