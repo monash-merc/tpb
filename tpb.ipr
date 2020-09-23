@@ -206,7 +206,7 @@
   <component name="ProjectResources">
     <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="SvnBranchConfigurationManager">
@@ -248,7 +248,7 @@
     <library name="core_lib">
       <CLASSES>
         <root url="jar://$PROJECT_DIR$/lib/core_lib/antlr-2.7.7.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/c3p0-0.9.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/c3p0-0.9.5.5.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/com.springsource.javax.annotation-1.0.0.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/com.springsource.javax.mail-1.4.0.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/com.springsource.net.sf.cglib-2.2.0.jar!/" />
@@ -260,20 +260,22 @@
         <root url="jar://$PROJECT_DIR$/lib/core_lib/com.springsource.org.jdom-1.1.0.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-beanutils-1.8.0.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-chain-1.2.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-collections-3.2.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-collections-3.2.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-compress-1.6.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-digester-2.0.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-fileupload-1.2.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-fileupload-1.4.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-io-2.0.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-io-2.2.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-lang-2.5.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-lang3-3.1.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-logging-1.1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-lang3-3.2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-logging-1.1.3.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-logging-api-1.1.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-net-3.1.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-pool-1.5.4.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-validator-1.3.1.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/ehcache-core-2.4.3.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/ezmorph-1.0.6.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/freemarker-2.3.19.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/freemarker-2.3.28.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/hibernate-c3p0-4.1.9.Final.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/hibernate-commons-annotations-4.0.1.Final.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/hibernate-core-4.1.9.Final.jar!/" />
@@ -291,7 +293,8 @@
         <root url="jar://$PROJECT_DIR$/lib/core_lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/jcommon-1.0.17.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/jfreechart-1.0.14.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/ognl-3.0.6.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/mchange-commons-java-0.2.20.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/ognl-3.0.21.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/opencsv-2.3.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/org.springframework.aop-3.1.1.RELEASE.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/org.springframework.asm-3.1.1.RELEASE.jar!/" />
@@ -317,18 +320,17 @@
         <root url="jar://$PROJECT_DIR$/lib/core_lib/postgresql-9.0-802.jdbc4.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/quartz-all-1.8.6.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/rome-1.0.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/slf4j-api-1.6.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/slf4j-api-1.7.12.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/slf4j-log4j12-1.6.0.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-core-2.3.15.3.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-jasperreports-plugin-2.3.15.3.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-jfreechart-plugin-2.3.15.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-core-2.3.37.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-jasperreports-plugin-2.3.37.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-jfreechart-plugin-2.3.37.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-jquery-plugin-3.3.2-SNAPSHOT.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-json-plugin-2.3.15.3.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-spring-plugin-2.3.15.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-json-plugin-2.3.37.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/struts2-spring-plugin-2.3.37.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/xmlpull-1.1.3.1.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/xstream-1.4.2.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/xwork-core-2.3.15.3.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-compress-1.6.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/xstream-1.4.10.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/xwork-core-2.3.37.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

@@ -72,7 +72,7 @@
       <sourceFolder url="file://$MODULE_DIR$/utest/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/webapp" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="core_lib" level="project" />
     <orderEntry type="library" exported="" name="compile_lib" level="project" />
