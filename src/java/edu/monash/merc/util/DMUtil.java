@@ -52,12 +52,12 @@ import java.util.regex.Pattern;
  * DMUtil class provides the most utilities functions.
  *
  * @author Simon Yu
- *         <p/>
- *         Email: xiaoming.yu@monash.edu
+ * <p/>
+ * Email: xiaoming.yu@monash.edu
  * @version 1.0
  * @since 1.0
- *        <p/>
- *        Date: 27/02/12 1:19 PM
+ * <p/>
+ * Date: 27/02/12 1:19 PM
  */
 public class DMUtil {
     private static final Object lock = new Object();
@@ -502,6 +502,26 @@ public class DMUtil {
 
         } catch (Exception ex) {
             ex.printStackTrace();
+        }
+
+        String file_name = "docx";
+
+        if (StringUtils.isNotBlank(file_name)) {
+            System.out.println("file name: " + file_name);
+            if (StringUtils.contains(file_name, "/") || StringUtils.contains(file_name, "\\")) {
+                System.out.println("invalid file name");
+            }
+            String file_ext = StringUtils.substring(file_name, StringUtils.lastIndexOf(file_name, ".") + 1);
+            System.out.println(file_ext);
+
+            if (StringUtils.equalsIgnoreCase("doc", file_ext)
+                    || StringUtils.equalsIgnoreCase("docx", file_ext)
+                    || StringUtils.equalsIgnoreCase("pdf", file_ext)) {
+                System.out.println("allow file type");
+            }else{
+                System.out.println("illeagal file type");
+            }
+//        StringUtils.substring(StringUtils.lastIndexOf(".", file_name) +1)
         }
     }
 }

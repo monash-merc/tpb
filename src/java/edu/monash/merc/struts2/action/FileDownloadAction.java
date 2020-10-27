@@ -36,6 +36,7 @@
 package edu.monash.merc.struts2.action;
 
 import edu.monash.merc.util.file.DMFileUtils;
+import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -47,12 +48,12 @@ import java.io.InputStream;
  * FileDownloadAction action class which handles the doucment downloading action request
  *
  * @author Simon Yu
- *         <p/>
- *         Email: xiaoming.yu@monash.edu
+ * <p/>
+ * Email: xiaoming.yu@monash.edu
  * @version 1.0
  * @since 1.0
- *        <p/>
- *        Date: 21/01/13 4:03 PM
+ * <p/>
+ * Date: 21/01/13 4:03 PM
  */
 @Scope("prototype")
 @Controller("site.fileDownloadAction")
@@ -71,15 +72,30 @@ public class FileDownloadAction extends BaseAction {
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
     public String download() {
-        String dwFile = "docs" + File.separator + fname;
-        String targetFile = getAppRoot() + dwFile;
-        try {
-            this.fileInputStream = DMFileUtils.readFileToInputStream(targetFile);
-            this.contentDisposition = "attachment;filename=\"" + fname + "\"";
-            this.bufferSize = 10240;
-            this.contentType = "application/octet-stream";
-        } catch (Exception ex) {
-            logger.error("the document " + fname + " is not found.");
+
+        if (StringUtils.contains(fname, "/") || StringUtils.contains(fname, "\\")) {
+            logger.error("Illegal file downloading: " + fname);
+            return FILE_NOT_FOUND;
+        }
+
+        String ext = StringUtils.substring(fname, StringUtils.lastIndexOf(fname, ".") + 1);
+
+        if (StringUtils.equalsIgnoreCase("doc", ext) || StringUtils.equalsIgnoreCase("docx", ext) || StringUtils.equalsIgnoreCase("pdf", ext)) {
+
+            String dwFile = "docs" + File.separator + fname;
+            String targetFile = getAppRoot() + dwFile;
+
+            try {
+                this.fileInputStream = DMFileUtils.readFileToInputStream(targetFile);
+                this.contentDisposition = "attachment;filename=\"" + fname + "\"";
+                this.bufferSize = 10240;
+                this.contentType = "application/octet-stream";
+            } catch (Exception ex) {
+                logger.error("the document " + fname + " is not found.");
+                return FILE_NOT_FOUND;
+            }
+        } else {
+            logger.error("Illegal file downloading, not doc or pdf file: " + fname);
             return FILE_NOT_FOUND;
         }
         return SUCCESS;

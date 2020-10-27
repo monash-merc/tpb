@@ -264,7 +264,6 @@
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-compress-1.6.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-digester-2.0.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-fileupload-1.4.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-io-2.0.1.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-io-2.2.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-lang-2.5.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/commons-lang3-3.2.jar!/" />
