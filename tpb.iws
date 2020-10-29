@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd983d83-0515-4455-b81c-97fd394c1464" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/ESAPI.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/validation.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" afterPath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpb.iws" afterPath="$PROJECT_DIR$/tpb.iws" />
     </list>
@@ -27,10 +29,10 @@
       <file leaf-file-name="XssInterceptor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="84" column="57" lean-forward="false" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
+            <state relative-caret-position="224">
+              <caret line="83" column="37" lean-forward="false" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
               <folding>
-                <element signature="e#0#6215#0" expanded="true" />
+                <element signature="e#0#6308#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -52,6 +54,36 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-105">
               <caret line="222" column="18" lean-forward="false" selection-start-line="222" selection-start-column="18" selection-end-line="222" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="197" column="37" lean-forward="false" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validation.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/validation.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ESAPI.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/ESAPI.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6207">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,27 +210,6 @@
             <path>
               <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
               <item name="tpb" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="core_lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpb" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="core_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="esapi-2.1.0.jar" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpb" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="core_lib" type="462c0819:PsiDirectoryNode" />
-              <item name="esapi-2.1.0.jar" type="ab9368bb:PsiFileNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -310,6 +321,7 @@
       <recent name="edu.monash.merc.system.parser.xml" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/conf" />
       <recent name="$PROJECT_DIR$/lib/core_lib" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/testData" />
@@ -1007,7 +1019,7 @@
       <workItem from="1601017960528" duration="1178000" />
       <workItem from="1601360378792" duration="3444000" />
       <workItem from="1603319738442" duration="1391000" />
-      <workItem from="1603682546071" duration="14524000" />
+      <workItem from="1603682546071" duration="15170000" />
     </task>
     <task id="LOCAL-00001" summary="added technical docs">
       <created>1429845371284</created>
@@ -1027,7 +1039,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51092000" />
+    <option name="totallyTimeSpent" value="51738000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="23" width="1920" height="1137" extended-state="0" />
@@ -1119,8 +1131,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testData/sleep_diary_2015_09_13_20_34_16.csv" />
-    <entry file="file://$PROJECT_DIR$/testData/Sleep_Diary_Full.csv" />
     <entry file="file://$PROJECT_DIR$/webcontent/js/jquery.mDialog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
@@ -1214,14 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2955">
-          <caret line="197" column="37" lean-forward="false" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1521,12 +1523,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="197" column="37" lean-forward="false" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/validation.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/ESAPI.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6207">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="84" column="57" lean-forward="false" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
+        <state relative-caret-position="224">
+          <caret line="83" column="37" lean-forward="false" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
           <folding>
-            <element signature="e#0#6215#0" expanded="true" />
+            <element signature="e#0#6308#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

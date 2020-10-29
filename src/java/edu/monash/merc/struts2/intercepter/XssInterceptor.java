@@ -40,6 +40,7 @@ import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.log4j.Logger;
+import org.owasp.esapi.ESAPI;
 
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -81,8 +82,9 @@ public class XssInterceptor extends AbstractInterceptor {
         if (value != null) {
             // NOTE: It's highly recommended to use the ESAPI library and uncomment the following line to
             // avoid encoded attacks.
-            // value = ESAPI.encoder().canonicalize(value);
-            value = StringEscapeUtils.escapeHtml4(value);
+            value = ESAPI.encoder().canonicalize(value);
+            System.out.println("------ ESAPI value: " + value);
+            //value = StringEscapeUtils.escapeHtml4(value);
             // Avoid null characters
             value = value.replaceAll("", "");
 
