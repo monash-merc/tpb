@@ -38,6 +38,7 @@ package edu.monash.merc.struts2.intercepter;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
+import com.opensymphony.xwork2.util.ValueStack;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.log4j.Logger;
 import org.owasp.esapi.ESAPI;
@@ -67,16 +68,16 @@ public class XssInterceptor extends AbstractInterceptor {
         ActionContext actionContext = invocation.getInvocationContext();
         Map<String, Object> parameters = actionContext.getParameters();
         if (parameters != null) {
-            for (Map.Entry<String, Object> entry : parameters.entrySet()) {
-                String value = ((String[]) (entry.getValue()))[0];
-                value = stripXSS(value);
-                System.out.println("------ value: " + value);
-                entry.setValue(value);
+            ValueStack stack = actionContext.getValueStack();
+            for (Map.Entry<String, Object> map : parameters.entrySet()) {
+                String value = ((String[]) (map.getValue()))[0];
                 if (logger.isDebugEnabled()) {
                     logger.debug("parameter value " + value);
                 }
+                String strip_xss_value = stripXSS(value);
+                System.out.println("------ strip_xss_value: " + strip_xss_value);
+                stack.setValue(map.getKey(), strip_xss_value);
             }
-            invocation.getInvocationContext().setParameters(parameters);
         }
         return invocation.invoke();
     }
