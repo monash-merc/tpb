@@ -66,6 +66,7 @@ public class XssInterceptor extends AbstractInterceptor {
         Map<String, Object> map = actionContext.getParameters();
         for (Map.Entry<String, Object> entry : map.entrySet()) {
             String value = ((String[]) (entry.getValue()))[0];
+            System.out.println("-------> parameter value: " + value);
             entry.setValue(StringEscapeUtils.escapeHtml4(value));
             if (logger.isDebugEnabled()) {
                 logger.debug("parameter value " + value);

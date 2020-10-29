@@ -34,12 +34,14 @@
                 <interceptor-ref name="defaultStack"/>
                 <interceptor-ref name="xssInterceptor"/>
             </interceptor-stack>
+
             <interceptor-stack name="authenStack">
                 <interceptor-ref name="defaultStack"/>
                 <interceptor-ref name="xssInterceptor"/>
                 <interceptor-ref name="authenInterceptor"/>
             </interceptor-stack>
         </interceptors>
+
         <default-interceptor-ref name="noneAuthStack"/>
 
         <global-results>

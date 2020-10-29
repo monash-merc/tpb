@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd983d83-0515-4455-b81c-97fd394c1464" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/struts.xml" afterPath="$PROJECT_DIR$/conf/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" afterPath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpb.iws" afterPath="$PROJECT_DIR$/tpb.iws" />
     </list>
     <ignored path="tpb.iws" />
@@ -25,23 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="XssInterceptor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="XssInterceptor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="68" column="51" lean-forward="false" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+            <state relative-caret-position="297">
+              <caret line="68" column="59" lean-forward="false" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
               <folding>
-                <element signature="e#0#3406#0" expanded="true" />
+                <element signature="e#0#3476#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringEscapeUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StringEscapeUtils.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.ideaLibSources/commons-lang3-3.2-sources.jar!/org/apache/commons/lang3/StringEscapeUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1824">
+            <state relative-caret-position="964">
               <caret line="510" column="33" lean-forward="false" selection-start-line="510" selection-start-column="33" selection-end-line="510" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -55,8 +55,18 @@
       <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="96" column="67" lean-forward="false" selection-start-line="96" selection-start-column="67" selection-end-line="96" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrafficLightAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/action/TrafficLightAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-105">
+              <caret line="222" column="18" lean-forward="false" selection-start-line="222" selection-start-column="18" selection-end-line="222" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -103,8 +113,8 @@
         <option value="$PROJECT_DIR$/src/java/edu/monash/merc/util/DMUtil.java" />
         <option value="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/action/FileDownloadAction.java" />
         <option value="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XSSRequestInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" />
         <option value="$PROJECT_DIR$/conf/struts.xml" />
+        <option value="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" />
       </list>
     </option>
   </component>
@@ -136,8 +146,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
-    <option name="y" value="36" />
+    <option name="x" value="97" />
+    <option name="y" value="270" />
     <option name="width" value="1920" />
     <option name="height" value="1137" />
   </component>
@@ -986,7 +996,7 @@
       <workItem from="1601017960528" duration="1178000" />
       <workItem from="1601360378792" duration="3444000" />
       <workItem from="1603319738442" duration="1391000" />
-      <workItem from="1603682546071" duration="12161000" />
+      <workItem from="1603682546071" duration="12983000" />
     </task>
     <task id="LOCAL-00001" summary="added technical docs">
       <created>1429845371284</created>
@@ -1006,10 +1016,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48729000" />
+    <option name="totallyTimeSpent" value="49551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="36" width="1920" height="1137" extended-state="0" />
+    <frame x="97" y="270" width="1920" height="1137" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1032,7 +1042,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35600424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3071639" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64833903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27281648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43866536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27050054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1273,14 +1283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/action/TrafficLightAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10444">
-          <caret line="83" column="13" lean-forward="false" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/util/file/DMFileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-546">
@@ -1462,14 +1464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/core_lib/commons-lang3-3.2.jar!/org/apache/commons/lang3/StringEscapeUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -1481,25 +1475,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="68" column="51" lean-forward="false" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#3406#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/commons-lang3-3.2-sources.jar!/org/apache/commons/lang3/StringEscapeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
+        <state relative-caret-position="964">
           <caret line="510" column="33" lean-forward="false" selection-start-line="510" selection-start-column="33" selection-end-line="510" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#19254#19255#0" expanded="true" />
             <element signature="e#19306#19307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="96" column="67" lean-forward="false" selection-start-line="96" selection-start-column="67" selection-end-line="96" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/action/TrafficLightAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="222" column="18" lean-forward="false" selection-start-line="222" selection-start-column="18" selection-end-line="222" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="68" column="59" lean-forward="false" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#3476#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
