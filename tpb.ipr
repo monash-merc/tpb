@@ -330,7 +330,7 @@
         <root url="jar://$PROJECT_DIR$/lib/core_lib/xmlpull-1.1.3.1.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/xstream-1.4.10.jar!/" />
         <root url="jar://$PROJECT_DIR$/lib/core_lib/xwork-core-2.3.37.jar!/" />
-        <root url="jar://$PROJECT_DIR$/lib/core_lib/esapi-2.2.1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/core_lib/esapi-2.1.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
