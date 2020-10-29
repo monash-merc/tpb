@@ -39,9 +39,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 import com.opensymphony.xwork2.util.ValueStack;
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.log4j.Logger;
-import org.owasp.esapi.ESAPI;
 
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -71,11 +69,11 @@ public class XssInterceptor extends AbstractInterceptor {
             ValueStack stack = actionContext.getValueStack();
             for (Map.Entry<String, Object> map : parameters.entrySet()) {
                 String value = ((String[]) (map.getValue()))[0];
-                if (logger.isDebugEnabled()) {
-                    logger.debug("parameter value " + value);
-                }
                 String strip_xss_value = stripXSS(value);
-                System.out.println("------ strip_xss_value: " + strip_xss_value);
+                if (logger.isDebugEnabled()) {
+                    logger.debug("parameter value: " + value);
+                    logger.debug("strip_xss_value: " + strip_xss_value);
+                }
                 stack.setValue(map.getKey(), strip_xss_value);
             }
         }
@@ -87,7 +85,6 @@ public class XssInterceptor extends AbstractInterceptor {
             // NOTE: It's highly recommended to use the ESAPI library and uncomment the following line to
             // avoid encoded attacks.
             // value = ESAPI.encoder().canonicalize(value);
-            System.out.println("------ ESAPI value: " + value);
             //value = StringEscapeUtils.escapeHtml4(value);
             // Avoid null characters
             value = value.replaceAll("", "");

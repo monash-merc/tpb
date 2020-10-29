@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd983d83-0515-4455-b81c-97fd394c1464" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/validation.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/core_lib/esapi-2.1.0.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" afterPath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpb.ipr" afterPath="$PROJECT_DIR$/tpb.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpb.iws" afterPath="$PROJECT_DIR$/tpb.iws" />
     </list>
     <ignored path="tpb.iws" />
@@ -24,24 +27,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="XssInterceptor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="XssInterceptor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+            <state relative-caret-position="285">
+              <caret line="74" column="70" lean-forward="false" selection-start-line="74" selection-start-column="70" selection-end-line="74" selection-end-column="70" />
               <folding>
-                <element signature="e#0#6572#0" expanded="true" />
+                <element signature="e#0#6419#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Encoder.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.ideaLibSources/esapi-2.1.0-sources.jar!/org/owasp/esapi/Encoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="144" column="11" lean-forward="false" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conf/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="54" />
+              <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -67,21 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validation.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/validation.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AuthenticationInterceptor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/AuthenticationInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="344">
-              <caret line="90" column="33" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="33" />
+              <caret line="90" column="33" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -90,7 +93,7 @@
       <file leaf-file-name="ESAPI.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/ESAPI.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6207">
+            <state relative-caret-position="-2876">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -171,8 +174,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="260" />
-    <option name="y" value="435" />
+    <option name="x" value="187" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1137" />
   </component>
@@ -218,6 +221,12 @@
             <path>
               <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
               <item name="tpb" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="core_lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -255,29 +264,6 @@
               <item name="tpb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tpb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
@@ -1027,7 +1013,7 @@
       <workItem from="1601017960528" duration="1178000" />
       <workItem from="1601360378792" duration="3444000" />
       <workItem from="1603319738442" duration="1391000" />
-      <workItem from="1603682546071" duration="17820000" />
+      <workItem from="1603682546071" duration="18685000" />
     </task>
     <task id="LOCAL-00001" summary="added technical docs">
       <created>1429845371284</created>
@@ -1047,10 +1033,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54388000" />
+    <option name="totallyTimeSpent" value="55253000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="260" y="435" width="1920" height="1137" extended-state="0" />
+    <frame x="187" y="23" width="1920" height="1137" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1071,9 +1057,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35600424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3071639" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3074656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64833903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35525024" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35525024" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27050054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1139,20 +1125,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webcontent/js/jquery.mDialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="225" column="47" lean-forward="false" selection-start-line="225" selection-start-column="47" selection-end-line="225" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/rifcs/impl/RifcsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/dao/AccessionTypeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -1515,10 +1487,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
+    <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/AuthenticationInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="197" column="37" lean-forward="false" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
+        <state relative-caret-position="344">
+          <caret line="90" column="33" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/core_lib/esapi-2.1.0.jar!/org/owasp/esapi/Encoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="46" column="11" lean-forward="false" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/esapi-2.1.0-sources.jar!/org/owasp/esapi/Encoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="144" column="11" lean-forward="false" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1531,38 +1519,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="197" column="37" lean-forward="false" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/conf/ESAPI.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6207">
+        <state relative-caret-position="-2876">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/AuthenticationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="90" column="33" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
+        <state relative-caret-position="285">
+          <caret line="74" column="70" lean-forward="false" selection-start-line="74" selection-start-column="70" selection-end-line="74" selection-end-column="70" />
           <folding>
-            <element signature="e#0#6572#0" expanded="true" />
+            <element signature="e#0#6419#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
