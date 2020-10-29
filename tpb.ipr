@@ -332,7 +332,9 @@
         <root url="jar://$PROJECT_DIR$/lib/core_lib/xwork-core-2.3.37.jar!/" />
       </CLASSES>
       <JAVADOC />
-      <SOURCES />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.ideaLibSources/commons-lang3-3.2-sources.jar!/" />
+      </SOURCES>
     </library>
     <library name="xml_lib">
       <CLASSES>
