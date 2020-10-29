@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd983d83-0515-4455-b81c-97fd394c1464" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/core_lib/esapi-2.1.0.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/core_lib/esapi-2.2.1.1.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" afterPath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpb.iws" afterPath="$PROJECT_DIR$/tpb.iws" />
     </list>
     <ignored path="tpb.iws" />
@@ -28,25 +27,11 @@
       <file leaf-file-name="XssInterceptor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1571">
-              <caret line="106" column="60" lean-forward="false" selection-start-line="106" selection-start-column="60" selection-end-line="106" selection-end-column="60" />
+            <state relative-caret-position="193">
+              <caret line="84" column="57" lean-forward="false" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
               <folding>
-                <element signature="e#0#6185#0" expanded="true" />
+                <element signature="e#0#6215#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StringEscapeUtils.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ideaLibSources/commons-lang3-3.2-sources.jar!/org/apache/commons/lang3/StringEscapeUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="964">
-              <caret line="510" column="33" lean-forward="false" selection-start-line="510" selection-start-column="33" selection-end-line="510" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#19254#19255#0" expanded="true" />
-                <element signature="e#19306#19307#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,6 +180,21 @@
               <item name="tpb" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="core_lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpb" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="core_lib" type="462c0819:PsiDirectoryNode" />
+              <item name="esapi-2.1.0.jar" type="ab9368bb:PsiFileNode" />
+            </path>
+            <path>
+              <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpb" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="core_lib" type="462c0819:PsiDirectoryNode" />
+              <item name="esapi-2.1.0.jar" type="ab9368bb:PsiFileNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tpb" type="b2602c69:ProjectViewProjectNode" />
@@ -1007,7 +1007,7 @@
       <workItem from="1601017960528" duration="1178000" />
       <workItem from="1601360378792" duration="3444000" />
       <workItem from="1603319738442" duration="1391000" />
-      <workItem from="1603682546071" duration="14135000" />
+      <workItem from="1603682546071" duration="14524000" />
     </task>
     <task id="LOCAL-00001" summary="added technical docs">
       <created>1429845371284</created>
@@ -1027,7 +1027,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50703000" />
+    <option name="totallyTimeSpent" value="51092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="23" width="1920" height="1137" extended-state="0" />
@@ -1119,7 +1119,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/webapp/web/tes2.html" />
     <entry file="file://$PROJECT_DIR$/testData/sleep_diary_2015_09_13_20_34_16.csv" />
     <entry file="file://$PROJECT_DIR$/testData/Sleep_Diary_Full.csv" />
     <entry file="file://$PROJECT_DIR$/webcontent/js/jquery.mDialog.js">
@@ -1486,18 +1485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/commons-lang3-3.2-sources.jar!/org/apache/commons/lang3/StringEscapeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="964">
-          <caret line="510" column="33" lean-forward="false" selection-start-line="510" selection-start-column="33" selection-end-line="510" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#19254#19255#0" expanded="true" />
-            <element signature="e#19306#19307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/action/TrafficLightAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-105">
@@ -1514,12 +1501,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/core_lib/esapi-2.1.0.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/commons-lang3-3.2-sources.jar!/org/apache/commons/lang3/StringEscapeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="510" column="33" lean-forward="false" selection-start-line="510" selection-start-column="33" selection-end-line="510" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#19254#19255#0" expanded="true" />
+            <element signature="e#19306#19307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1571">
-          <caret line="106" column="60" lean-forward="false" selection-start-line="106" selection-start-column="60" selection-end-line="106" selection-end-column="60" />
+        <state relative-caret-position="193">
+          <caret line="84" column="57" lean-forward="false" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
           <folding>
-            <element signature="e#0#6185#0" expanded="true" />
+            <element signature="e#0#6215#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
