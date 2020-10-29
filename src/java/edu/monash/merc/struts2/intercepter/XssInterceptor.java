@@ -78,6 +78,11 @@ public class XssInterceptor extends AbstractInterceptor {
             }
             invocation.getInvocationContext().setParameters(parameters);
         }
+        Map<String, Object> params = actionContext.getParameters();
+        for (Map.Entry<String, Object> entry1 : params.entrySet()) {
+            String p_value = ((String[]) (entry1.getValue()))[0];
+            System.out.println("------ after value: " + p_value);
+        }
         return invocation.invoke();
     }
 
