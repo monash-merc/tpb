@@ -65,15 +65,18 @@ public class XssInterceptor extends AbstractInterceptor {
     @Override
     public String intercept(ActionInvocation invocation) throws Exception {
         ActionContext actionContext = invocation.getInvocationContext();
-        Map<String, Object> map = actionContext.getParameters();
-        for (Map.Entry<String, Object> entry : map.entrySet()) {
-            String value = ((String[]) (entry.getValue()))[0];
-            value = stripXSS(value);
-            System.out.println("------ value: " + value);
-            entry.setValue(value);
-            if (logger.isDebugEnabled()) {
-                logger.debug("parameter value " + value);
+        Map<String, Object> parameters = actionContext.getParameters();
+        if (parameters != null) {
+            for (Map.Entry<String, Object> entry : parameters.entrySet()) {
+                String value = ((String[]) (entry.getValue()))[0];
+                value = stripXSS(value);
+                System.out.println("------ value: " + value);
+                entry.setValue(value);
+                if (logger.isDebugEnabled()) {
+                    logger.debug("parameter value " + value);
+                }
             }
+            invocation.getInvocationContext().setParameters(parameters);
         }
         return invocation.invoke();
     }

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd983d83-0515-4455-b81c-97fd394c1464" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/ESAPI.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/validation.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" afterPath="$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpb.iws" afterPath="$PROJECT_DIR$/tpb.iws" />
     </list>
@@ -29,10 +27,10 @@
       <file leaf-file-name="XssInterceptor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="83" column="37" lean-forward="false" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+            <state relative-caret-position="161">
+              <caret line="67" column="64" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="64" />
               <folding>
-                <element signature="e#0#6308#0" expanded="true" />
+                <element signature="e#0#6311#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -74,6 +72,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticationInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/AuthenticationInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="95" column="46" lean-forward="true" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -163,8 +171,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
-    <option name="y" value="23" />
+    <option name="x" value="300" />
+    <option name="y" value="63" />
     <option name="width" value="1920" />
     <option name="height" value="1137" />
   </component>
@@ -1019,7 +1027,7 @@
       <workItem from="1601017960528" duration="1178000" />
       <workItem from="1601360378792" duration="3444000" />
       <workItem from="1603319738442" duration="1391000" />
-      <workItem from="1603682546071" duration="15170000" />
+      <workItem from="1603682546071" duration="15668000" />
     </task>
     <task id="LOCAL-00001" summary="added technical docs">
       <created>1429845371284</created>
@@ -1039,10 +1047,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51738000" />
+    <option name="totallyTimeSpent" value="52236000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="23" width="1920" height="1137" extended-state="0" />
+    <frame x="300" y="63" width="1920" height="1137" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1383,14 +1391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/AuthenticationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="107" column="9" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="107" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/core_lib/struts2-core-2.3.37.jar!/org/apache/struts2/interceptor/CheckboxInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1547,12 +1547,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/AuthenticationInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="95" column="46" lean-forward="true" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/edu/monash/merc/struts2/intercepter/XssInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="83" column="37" lean-forward="false" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+        <state relative-caret-position="161">
+          <caret line="67" column="64" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="64" />
           <folding>
-            <element signature="e#0#6308#0" expanded="true" />
+            <element signature="e#0#6311#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
